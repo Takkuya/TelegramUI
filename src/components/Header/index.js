@@ -6,7 +6,7 @@ export function Header() {
 
 
         <Container>
-            <IconWrapper>
+            <IconWrapper >
                 <TelegramIcon />
             </IconWrapper>
             <p> Telegram </p>

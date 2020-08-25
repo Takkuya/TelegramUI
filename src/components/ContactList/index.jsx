@@ -16,7 +16,7 @@ export default function ContactList() {
 
 function Contact({ name, avatar, lastMessage, lastSeen }) {
     return (
-        <ContactContainer>
+        <ContactContainer to={`/${name}`}>
             <div className="avatarContainer">
                 <img src={avatar} alt={name} />
 

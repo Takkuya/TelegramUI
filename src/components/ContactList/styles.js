@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: stretch;
 `;
 
-export const ContactContainer = styled.div`
+export const ContactContainer = styled(Link)`
    
     border-bottom: 1px solid rgb(238, 238, 238);
     display: flex;
@@ -15,6 +15,8 @@ export const ContactContainer = styled.div`
     align-items: stretch;
     padding: 5px 5px;
     cursor: pointer;
+    color: inherit;
+    text-decoration: none;
     .avatarContainer{
         display: flex;
         align-items:center;
