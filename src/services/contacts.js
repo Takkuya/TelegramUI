@@ -1,4 +1,4 @@
-export default [
+export const users = [
     {
         id: '2d784a46-b4ef-43f9-97dd-894fecf6c623',
         name: 'Paulo Souza',
@@ -44,6 +44,14 @@ export default [
         phone: '11989453004',
         lastMessage: 'Ei Elma, acho que vou desistir da música e me matar.',
         lastSeen: '18:44'
-    },
+    }
 
 ]
+
+
+export default function getUserInfo(userName) {
+    console.log(userName)
+    const user = users.find(({ name }) => name === userName)
+
+    return user
+}

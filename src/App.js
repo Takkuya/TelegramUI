@@ -15,7 +15,7 @@ function App() {
             <ContactList />
           </>
         )} />
-        <Route exact path="/:user" component={Chat} />
+        <Route exact path="/:userName" component={Chat} />
       </Router>
     </div>
   );

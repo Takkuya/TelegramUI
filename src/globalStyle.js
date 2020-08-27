@@ -20,5 +20,15 @@ export default createGlobalStyle`
     }
     html {
         font-size: 62%;
-    } 
+    }
+    
+    *:focus{
+        outline: none;
+        box-shadow: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 `

@@ -1,12 +1,12 @@
 import React from 'react'
-import contacts from '../../services/contacts'
+import { users } from '../../services/contacts'
 import { Container, ContactContainer } from './styles'
 
 export default function ContactList() {
     return (
         <Container bgColor="#333">
             {
-                contacts.map(contact => <Contact {...contact} />)
+                users.map(contact => <Contact {...contact} />)
             }
 
         </Container>
